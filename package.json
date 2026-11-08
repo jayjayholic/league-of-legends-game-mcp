@@ -1,0 +1,26 @@
+{
+  "name": "league-of-legends-game-mcp",
+  "version": "0.1.0",
+  "description": "Riot Live Client Data SDK and MCP server",
+  "license": "MIT",
+  "type": "module",
+  "main": "./src/sdk/index.ts",
+  "bin": {
+    "league-of-legends-game-mcp": "./src/mcp/server.ts"
+  },
+  "scripts": {
+    "start": "bun run src/mcp/server.ts",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.32.2",
+    "zod": "^3.25.76"
+  },
+  "devDependencies": {
+    "@types/bun": "^1.4.4",
+    "@types/node": "^22.20.5",
+    "typescript": "~5.9.3",
+    "vitest": "^3.2.7"
+  }
+}
